@@ -1,0 +1,31 @@
+{
+    "pluginAlias": "WaterPump",
+    "pluginType": "accessory",
+    "singular": false,
+    "schema": {
+        "type": "object",
+        "properties": {
+            "name": {
+                "title": "Name",
+                "type": "string",
+				"pump_name":"Water Pump",
+                "required": true
+            },
+			"onLink": {
+                "title": "onLink",
+                "type": "string",
+                "required": true
+            },
+			"onLink": {
+                "title": "offLink",
+                "type": "string",
+                "required": true
+            },
+			"onLink": {
+                "title": "statusLink",
+                "type": "string",
+                "required": true
+            }
+        }
+    }
+}

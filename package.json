@@ -1,0 +1,32 @@
+{
+  "name": "homebridge-water-pump",
+  "version": "1.0.0",
+  "description": "Homebridge WaterPump Accessory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/immanuvelms/homebridge-water-pump.git"
+  },
+  "keywords": [
+    "light",
+    "homebridge-plugin",
+    "tubelight",
+    "lightbulb"
+  ],
+  "engines": {
+    "node": ">=6.4.0",
+    "homebridge": ">=0.3.0"
+  },
+  "dependencies": {
+    "axios": "~0.20.0"
+  },
+  "author": "Immanuvel",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/immanuvelms/homebridge-water-pump/issues"
+  },
+  "homepage": "https://github.com/immanuvelms/homebridge-water-pump#readme"
+}
