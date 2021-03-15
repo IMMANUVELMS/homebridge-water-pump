@@ -40,7 +40,7 @@ WaterPump.prototype.getPowerOn = function(callback) {
 		this.pumpState = 0;
 		callback(null, this.pumpState);
 	}else{
-		this.log("The TubeLight accessory returns Invalid data");
+		this.log("The Water Pump accessory returns Invalid data");
 	}
 		
    
@@ -84,16 +84,14 @@ if(powerOn){
    
 }
 
-TubeLight.prototype.getServices = function() {
-	this.service.getCharacteristic(Characteristic.ProgramMode).updateValue(0)
-    this.service.getCharacteristic(Characteristic.Active).updateValue(1)
-    this.service.getCharacteristic(Characteristic.InUse).updateValue(0)
-    var pumpService = new Service.IrrigationSystem(this.name);
-    
+WaterPump.prototype.getServices = function() {
+	
+    var pumpService = new Service.Switch(this.name);
     pumpService
-      .getCharacteristic(Characteristic.InUse)
+      .getCharacteristic(Characteristic.On)
       .on('get', this.getPowerOn.bind(this))
       .on('set', this.setPowerOn.bind(this));
+
     
     return [pumpService];
 }

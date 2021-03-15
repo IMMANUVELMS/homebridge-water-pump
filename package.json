@@ -1,6 +1,6 @@
 {
   "name": "homebridge-water-pump",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "description": "Homebridge WaterPump Accessory",
   "main": "index.js",
   "scripts": {
